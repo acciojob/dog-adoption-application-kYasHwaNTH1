@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-
-
 
 <form>
-	<lable for="name" >Name</lable>
-	<input  type="text" name="name" placeholder="Username" id="name" />
-	<label for="number">Number:</label>
-	<input type="number" name="number" placeholder="+91 897654321" id="phone" >
-	<textarea id="address" placeholder="Address" cols=10 rows=15 ></textarea>
-	<p for="question" id="checkbox">Have you ever lived witha Dog before?</p>
-	<label name="question">Yes</label><input type="radio" name="question">
-	<label name="question">No</label><input type="radio" name="question">
-	<p>Please select your preferred breeds?</p>
-	<select multiple id="multiSelect" type="select" >
-		<option>Street</option>
-		<option>German Shepered</option>
-		<option>Dino</option>
+	<!-- Name -->
+	<label for="name">Name:</label>
+	<input type="text" name="name" placeholder="Username" id="name" />
+
+	<br><br>
+
+	<!-- Phone Number -->
+	<label for="phone">Number:</label>
+	<input type="number" name="number" placeholder="+91 897654321" id="phone" />
+
+	<br><br>
+
+	<!-- Address -->
+	<label for="address">Address:</label><br>
+	<textarea id="address" name="address" placeholder="Enter your address" cols="30" rows="5"></textarea>
+
+	<br><br>
+
+	<!-- Radio Buttons -->
+	<p>Have you ever lived with a dog before?</p>
+	<input type="radio" id="yes" name="question" value="yes">
+	<label for="yes">Yes</label>
+
+	<input type="radio" id="no" name="question" value="no">
+	<label for="no">No</label>
+
+	<br><br>
+
+	<!-- Dropdown (Multi-select) -->
+	<p>Please select your preferred breeds:</p>
+	<select multiple id="multiSelect" name="breeds[]">
+		<option value="street">Street</option>
+		<option value="german">German Shepherd</option>
+		<option value="dino">Dino</option>
 	</select>
-<input type="button" id="submit" value="Submit" />
+
+	<br><br>
+
+	<!-- Submit Button -->
+	<input type="submit" id="submit" value="Submit" />
 </form>
 
-	
-    <script type="text/javascript" src="./script.js">
-</script>
-
+<script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
